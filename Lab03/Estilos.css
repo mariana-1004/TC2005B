@@ -1,0 +1,51 @@
+
+#tituloPrincipal{
+    color:navy;
+    font-size: 40px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+#referencias{
+    color:black;
+    font-size: 15px;
+    text-align: left;
+}
+
+.tituloSecundario {
+    color:rgba(203, 29, 13, 0.973);
+    font-size: 25px;
+    font-family: 'Roboto', sans-serif;
+    text-align: center;
+}
+
+.tituloTerciario{
+    color:rgb(217, 103, 15);
+    font-family: 'Open Sans', sans-serif;
+    font-size: 25px;
+    
+}
+
+.boxmodel {
+    width: 200px; 
+    height: 120px; 
+    background-color: #ffffff;
+    padding: 10px;
+    border: 5px solid #000000; 
+    margin: 30px auto;
+    box-sizing: border-box; 
+    text-align: center; 
+    line-height: 100px; 
+}
+
+body {
+    line-height: 2;
+    padding: 4em 1em;
+    color: black;
+  }
+
+  code,
+pre {
+  background: #8dde14;
+}
+
