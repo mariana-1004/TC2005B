@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title> Laboratorio 4 </title>
+    </head>
+
+    <body>
+        
+        <h2> Laboratorio 04</h2>
+        <h3>Problema 1</h3>
+        <script src="Lab04.js"></script>
+
+        <h4> Problema 2 </h4>
+        <p id="resultado"></p>
+        <button onclick="question()"> Iniciar </button>
+        <script src="./Problema2.js"> </script>
+        
+        <h4> Problema 3 </h4>
+        <h4> Problema 4 </h4>
+        <h4> Problema 5 </h4>
+        <h4> Problema 6 </h4>
+
+
+        <h4> Preguntas </h4>
+        <ul>
+            <li> <strong> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </strong></li>
+            <ul>
+                <li><strong> Direfencias:</strong></li>
+                <li> JavaScript es un lenguaje interpretado y Java es compilado </li>
+                <li> Java es un lenguaje de programación orientada a objetos puros y JS puede emular la programación orientada a objetos</li>
+                <li> JS es gestionado por ECMAScript y Java por Oracle</li>
+            </ul>
+            <ul>
+                <li> <strong>Semejanzas: </strong></li>
+                <li> Tienen una sintaxis influenciada por el lenguaje C.</li>
+                <li> Ambos necesitan de un entorno de ejeccuión, para ejecutar el código en diferentes plataformas.</li>
+                <li> Ambos soportan la POO.</li>
+            </ul>
+
+            <li><strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </strong> </li>
+            <ol>
+                <li>Date.prototype.getDate() - Devuelve el día del mes de la fecha ingresada. </li>
+                <li>Date.prototype.getMonth() - Devuelve el mes de la fecha especificada, sólo que empieza a contar desde 0.</li>
+                <li>Date.prototype.getFullYear() - Retorna el año de la fecha especificada.</li>
+                <li>Date.prototype.getHours() - Devuelve la hora del día para la fecha especificada.El resultado está en el rango de 0 (12 AM) a 23 (11 PM).</li>
+                <li>Date.prototype.getTime() - Devuelve el valor numérico dependiendo a la fecha y hora especificadas en milisegundos desde el 1 de enero de 1970 00:00:00 UTC (también conocido como Unix timestamp).</li>
+            </ol>
+
+            <li><strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong></li>
+            <ol>
+                <li> push() - Añade elementos al final del arreglo. </li>
+                <li> pop() - Elimina el ultimo elemento del arreglo. </li>
+                <li> shift() - Elimina el primer elemento de un arreglo y desplaza los demás elementos a posiciones más bajas. </li>
+                <li> unshift() - Añade uno o más elementos al inicio del arreglo. </li>
+                <li> slice() - Devuelve una copia de una parte del arreglo en un nuevo arreglo, seleccionado desde inicio hasta fin (fin no incluido). El arreglo original no se modifica.</li>
+            </ol>
+            <li> <strong> ¿Cómo se declara una variable con alcance local dentro de una función? </strong> <br> Poniendo "let", "var" o "const" antes de poner el nombre de la variable </li>
+            <li> <strong> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </strong> <br> Usar variables globales en nuestras funciones puede complicarnos la vida, ya que pueden mezclarse, hacer que nuestro código sea difícil de seguir y mantener, aumentar los riesgos de seguridad. </li>
+        </ul>
+
+        <footer>
+            <h4> Referencias</h4>
+            <p> Ceron, M. (2023). ¿Qué diferencias hay entre JavaScript y Java?. Hack a Boss <br>&nbsp;&nbsp;&nbsp; https://www.hackaboss.com/blog/diferencias-javascript-java#:~:text=Java%20es%20un%20lenguaje%20de,organización%20sin%20ánimo%20de%20lucro.
+                <br><br>MDN.(2023). Date. MDN <br>&nbsp;&nbsp;&nbsp; https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
+                <br><br>Zubikarai. (2022). Manual de arreglos en JavaScript: Métodos de arreglos de JS explicados con ejemplos. freeCodeCamp <br>&nbsp;&nbsp;&nbsp; https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/
+            </p>
+
+        </footer>
+        
+    </body>
+
+</html>
