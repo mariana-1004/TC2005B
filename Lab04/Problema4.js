@@ -31,7 +31,7 @@ function final() {
     let dimensiones = dimentions();
     let matriz = definicionMatriz(dimensiones.filas, dimensiones.columnas);
     let promedios = calcularPromedios(matriz);
-    document.getElementById("resultados").innerHTML = "Los promedios de cadarenglon son: " + promedios.join("\n ");
+    document.getElementById("resultados").innerHTML = "Los promedios de cadarenglon son: " + promedios.join(" , ");
 }
 
 
