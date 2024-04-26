@@ -7,7 +7,7 @@ router.get('/test_json', (req, res)=>{
     res.status(200).json({code: 200, msg:"ok"});
 });
 
-router.get('/login', controller.login);
+router.get('/login', controller.render_login);
 router.post('/login', controller.do_login);
 router.get('/registro', ()=>{});
 router.post('/registro', ()=>{});

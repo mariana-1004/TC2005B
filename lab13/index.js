@@ -21,7 +21,7 @@ app.get("/test_ejes", (request,response,next)=>{
     response.render("usuarios/login");
 });
 
-const rutasUsuarios = require('./routes/usuarios.routes');
+const rutasUsuarios = require('./routes/usuarios.routes.js');
 app.use('/usuarios', rutasUsuarios);
 
 const server = http.createServer( (request, response) => {    
