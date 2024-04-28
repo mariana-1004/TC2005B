@@ -29,11 +29,25 @@
         <script src="./Problema4.js"> </script>
         
         <h4> Problema 5 - Numero inverso</h4>
-        <button onclick="final()">Calcular Promedios</button>
-        <p id="resultadoos"></p>
+        <p>Ingrese un numero: </p>
+        <input type="number" id="numero">
+        <button onclick="alReves()">Invertir Dígitos</button>
+        <p id="resultado5"></p>
         <script src="./Problema5.js"> </script>
 
-        <h4> Problema 6 </h4>
+        <h4> Problema 6 - Calculadora de propinas</h4>
+        <p>Este programa tiene como propósito calcular la propina que se debe dejar con respecto al porcentaje seleccionado. </p>
+        <label for="cuenta">Total de la cuenta:</label>
+        <input type="number" id="cuenta">
+        <br><br>
+        <label for="propina">Porcentaje de Propina:</label>
+        <input type="number" id="propina">
+        <br><br>
+        <button onclick="calcularPago()">Calcular Propina</button>
+        <p><strong>Resultados:</strong></p>
+        <p id="montoPropina">Propina: $0</p>
+        <p id="totalPagar">Total a Pagar: $0</p>
+        <script src="./Problema6.js"></script>
 
 
         <h4> Preguntas </h4>
