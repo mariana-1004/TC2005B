@@ -2,58 +2,61 @@
 <html lang="en">
     <head>
         <meta charset="utf-8">
-        <title> Laboratorio 4 </title>
+        <title> Laboratorio 5</title>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
     </head>
 
-    <body>
+    <body class="container">
         
-        <h2> Laboratorio 04</h2>
+        <h2 class="card-panel teal lighten-2"> Laboratorio 05</h2>
         <h4>Problema 1 - Exponenciales</h4>
-        <script src="Lab04.js"></script>
+        <script src="./Lab05Problema1.js"></script>
 
-        <h4> Problema 2 - Suma de 2 numeros random</h4>
+        <h4> Problema 2 - Suma de 2 números random</h4>
         <p id="resultado"></p>
-        <button onclick="question()"> Iniciar </button>
-        <script src="./Problema2.js"> </script>
+        <button class="btn blue" onclick="question()"> Iniciar </button>
+        <script src="./Lab05Problema2.js"> </script>
         
         <h4> Problema 3 - Contador de Números en un Arreglo</h4>
         <p>Ingrese números separados por comas:</p>
         <input type="text" id="numEntrada">
-        <button onclick="arrayAnalysis()">Revisar</button>
+        <button class="btn orange" onclick="arrayAnalysis()">Revisar</button>
         <p id="results"></p>
-        <script src="./Problema3.js"> </script>
+        <script src="./Lab05Problema3.js"> </script>
 
         <h4> Problema 4 - Función promedios</h4>
-        <button onclick="final()">Calcular Promedios</button>
+        <button class="btn green" onclick="final()">Calcular Promedios</button>
         <p id="resultados"></p>
-        <script src="./Problema4.js"> </script>
+        <script src="./Lab05Problema4.js"> </script>
         
         <h4> Problema 5 - Numero inverso</h4>
         <p>Ingrese un numero: </p>
         <input type="number" id="numero">
-        <button onclick="alReves()">Invertir Dígitos</button>
+        <button class="btn deep-purple" onclick="alReves()">Invertir Dígitos</button>
         <p id="resultado5"></p>
-        <script src="./Problema5.js"> </script>
+        <script src="./Lab05Problema5.js"> </script>
 
         <h4> Problema 6 - Calculadora de propinas</h4>
         <p>Este programa tiene como propósito calcular la propina que se debe dejar con respecto al porcentaje seleccionado. </p>
-        <label for="cuenta">Total de la cuenta:</label>
+        <p>Total de la cuenta:</p>
+        <label for="cuenta"></label>
         <input type="number" id="cuenta">
         <br><br>
-        <label for="propina">Porcentaje de Propina:</label>
+        <p> Porcentaje de Propina (ingrese la cantidad sin el signo de porcetaje): </p>
+        <label for="propina"></label>
         <input type="number" id="propina">
         <br><br>
-        <button onclick="calcularPago()">Calcular Propina</button>
+        <button class="btn red" onclick="calcularPago()">Calcular Propina</button>
         <p><strong>Resultados:</strong></p>
         <p id="montoPropina">Propina: $0</p>
         <p id="totalPagar">Total a Pagar: $0</p>
-        <script src="./Problema6.js"></script>
+        <script src="./Lab05Problema6.js"></script>
 
-
-        <h4> Preguntas </h4>
-        <ul>
-            <li> <strong> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </strong></li>
-            <ul>
+        <h4 class="card-panel blue"> Preguntas </h4>
+        <h5>Laboratorio 4</h5>
+        <ul class="collection">
+            <li class="collection-item"> <strong> ¿Qué diferencias y semejanzas hay entre Java y JavaScript? </strong></li>
+            <ul >
                 <li><strong> Direfencias:</strong></li>
                 <li> JavaScript es un lenguaje interpretado y Java es compilado. </li>
                 <li> Java es un lenguaje de programación orientada a objetos puros y JS puede emular la programación orientada a objetos</li>
@@ -66,7 +69,7 @@
                 <li> Ambos soportan la POO.</li>
             </ul>
 
-            <li><strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </strong> </li>
+            <li class="collection-item"><strong>¿Qué métodos tiene el objeto Date? (Menciona al menos 5*) </strong> </li>
             <ol>
                 <li>Date.prototype.getDate() - Devuelve el día del mes de la fecha ingresada. </li>
                 <li>Date.prototype.getMonth() - Devuelve el mes de la fecha especificada, sólo que empieza a contar desde 0.</li>
@@ -75,7 +78,7 @@
                 <li>Date.prototype.getTime() - Devuelve el valor numérico dependiendo a la fecha y hora especificadas en milisegundos desde el 1 de enero de 1970 00:00:00 UTC (también conocido como Unix timestamp).</li>
             </ol>
 
-            <li><strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong></li>
+            <li class="collection-item"><strong>¿Qué métodos tienen los arreglos? (Menciona al menos 5*)</strong></li>
             <ol>
                 <li> push() - Añade elementos al final del arreglo. </li>
                 <li> pop() - Elimina el ultimo elemento del arreglo. </li>
@@ -83,19 +86,29 @@
                 <li> unshift() - Añade uno o más elementos al inicio del arreglo. </li>
                 <li> slice() - Devuelve una copia de una parte del arreglo en un nuevo arreglo, seleccionado desde inicio hasta fin (fin no incluido). El arreglo original no se modifica.</li>
             </ol>
-            <li> <strong> ¿Cómo se declara una variable con alcance local dentro de una función? </strong> <br> Poniendo "let", "var" o "const" antes de poner el nombre de la variable. </li>
-            <li> <strong> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </strong> <br> Usar variables globales en nuestras funciones puede complicarnos la vida, ya que pueden mezclarse, hacer que nuestro código sea difícil de seguir y mantener, aumentar los riesgos de seguridad. </li>
+            <li class="collection-item"> <strong> ¿Cómo se declara una variable con alcance local dentro de una función? </strong> <br> Poniendo "let", "var" o "const" antes de poner el nombre de la variable. </li>
+            <li class="collection-item"> <strong> ¿Qué implicaciones tiene utilizar variables globales dentro de funciones? </strong> <br> Usar variables globales en nuestras funciones puede complicarnos la vida, ya que pueden mezclarse, hacer que nuestro código sea difícil de seguir y mantener, aumentar los riesgos de seguridad. </li>
         </ul>
+
+        <h5>Laboratorio 5</h5>
+        <h6 > Material design</h6>
+        <p> Es un lenguaje visual que combina los principios fundamentales del diseño de calidad con las innovaciones de la ciencia y la tecnología. 
+            Esta filosofía de diseño surgió en 2014, inicialmente estaba contemplado para el sistema Android, pero con el paso de los años se extendió por toda la web.
+            Material Design está inspirado en papel, es por eso que todo el entorno se construye considerando los atributos del espacio tridimensional: superficies, profundidad, así como luz y sombra. </p>
+            <ol>
+                <li><strong> Superficies: </strong> En Material Design todos los elementos tienen profundidad y se pueden mover en el eje "x", en el eje "y" y tiene con profundidades variables a lo largo del eje "Z"</li>
+                <li><strong> Elevaciones: </strong> Se define como la distancia que exite entre los diferentes elementos y superficies. Se mide en el eje "z" desde las partes frontales de cada superficie</li>
+                <li><strong> Luz y Sombra</strong> En la interfaz de usuarios existen dos tipos de luces: Clave (obtiene sombras precisas) y Ambientales (aparecen desde los ángulos, creando sombras más suaves y difusas). El saber utilizar la luz y la sombra, permite generar una coherencia entre el diseño y la experiencia que tiene el usuario</li>
+            </ol>
 
         <footer>
             <h4> Referencias</h4>
             <p> Ceron, M. (2023). ¿Qué diferencias hay entre JavaScript y Java?. Hack a Boss <br>&nbsp;&nbsp;&nbsp; https://www.hackaboss.com/blog/diferencias-javascript-java#:~:text=Java%20es%20un%20lenguaje%20de,organización%20sin%20ánimo%20de%20lucro.
                 <br><br>MDN.(2023). Date. MDN <br>&nbsp;&nbsp;&nbsp; https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Date
                 <br><br>Zubikarai. (2022). Manual de arreglos en JavaScript: Métodos de arreglos de JS explicados con ejemplos. freeCodeCamp <br>&nbsp;&nbsp;&nbsp; https://www.freecodecamp.org/espanol/news/el-manual-de-arreglos-en-javascript/
+                <br><br>TUATARA.(2023). ¿Qué es Material design?. TUATARA <br>&nbsp;&nbsp;&nbsp; https://tuatara.co/blog/diseno/material-design/
             </p>
 
         </footer>
-        
-    </body>
+ </body>
 
-</html>
