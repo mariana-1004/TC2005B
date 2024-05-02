@@ -13,7 +13,7 @@ module.exports.post_registro = async(req,res) =>{
     console.log(req.body.password);
 }
 
-module.exports = class User {
+exports.User = class {
     //Constructor de la clase. Sirve para crear un nuevo objeto, y en él se definen las propiedades del modelo
     constructor(my_username, my_name, my_password) {
         this.username = my_username;
