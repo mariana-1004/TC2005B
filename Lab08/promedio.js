@@ -1,12 +1,12 @@
-const readline = require('readline');
+let readline = require('readline');
 
-const rl = readline.createInterface({
+let rl = readline.createInterface({
     input: process.stdin,
     output: process.stdout
 });
 
-rl.question('ingrese el arreglo de numeros', (input) => {
-    let numbers = input.split(' ').map(Number);  // Convierte la cadena de entrada en un arreglo de números
+rl.question('Ingrese el arreglo de numeros: \n ', (input) => {
+    let numbers = input.split(' ').map(Number);  
     let average = calculateAverage(numbers);
     console.log(`El promedio es: ${average}`);
     rl.close();
