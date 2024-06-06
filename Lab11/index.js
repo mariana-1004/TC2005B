@@ -9,8 +9,16 @@ app.use((request, response, next) => {
 });
 app.use((request, response, next) => {
   console.log('Otro middleware!');
-  response.send('¡Hola mundo!'); //Manda la respuesta
+  response.status(404);
+  response.send('¡Page Not Found!'); //Manda la respuesta
 });
+
+app.get('/', (request, response, next) => {
+  response.setHeader('Content-Type', 'text/plain');
+  response.send("URL index /");
+});
+
+
 
 const server = http.createServer( (request, response) => {    
     console.log(request.url);
