@@ -1,0 +1,7 @@
+body {
+    background-image: url('fondo.jpeg');
+    background-size: cover; /* Cubrir todo el fondo */
+    background-position: center bottom; /* Centrar la imagen en la página */
+    background-attachment: fixed;
+    background-repeat: no-repeat;
+}
